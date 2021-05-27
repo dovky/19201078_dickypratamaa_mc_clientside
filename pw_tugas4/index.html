@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4</title>
+</head>
+
+<body>
+    <!-- 
+        NIM : 19201078 
+        Nama : Dicky Pratama A
+    -->
+
+    <h3>Form Registrasi</h3>
+    <form method="POST" action="">
+        <fieldset>
+            <legend style="margin-left: auto;">Biodata</legend>
+            <div>
+                <label for="name">Nama:</label>
+                <input type="text" name="nama" pattern="[a-zA-Z]" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend style="margin: 0px auto;">Resolusi Tahan Ini</legend>
+            <div>
+                <input type="checkbox" name="checkbox" value="HTML" required>
+                <label for="html">Menguasai HTML</label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" value="CSS" required>
+                <label for="css">Menguasai CSS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" value="PHP" required>
+                <label for="php">Menguasai PHP</label>
+            </div>
+        </fieldset>
+        <button type="submit">Kirim Data</button>
+    </form>
+</body>
+
+</html>

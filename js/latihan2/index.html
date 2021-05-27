@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title>JS 2 (Latihan)</title>
+    <style>
+        .sec-heading {
+            display: flex;
+            position: relative;
+            border-bottom: 2px solid #C0BFBF;
+            margin-bottom: 22px;
+        }
+
+        .form-group {
+            display: flex;
+        }
+
+    </style>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- 
+        NIM : 19201078 
+        Nama : Dicky Pratama A
+    -->
+
+    <div class="sec-heading">
+        <h2>Penggunaan Percabangan Switch</h2>
+    </div>
+    <form method="post" action="" onsubmit="return prosesForm();">
+        <div class="form-group" style="margin-bottom: 6px;">
+            <label for="">Masukkan Nomor Bulan [1-12] :</label>
+            <input id="bulan" type="number" name="bulan">
+        </div>
+        <div class="form-group">
+            <button type="submit" style="margin-right: 3px;">Hitung</button>
+            <button type="reset">Ulang</button>
+        </div>
+    </form>
+
+    <!-- JavaScript -->
+    <script>
+        function prosesForm() {
+            let getData = document.getElementById("bulan");
+
+            if (getData.value == 1) {
+                alert("Bulan ke 1 adalah = Januari");
+            } else if (getData.value == 2) {
+                alert("Bulan ke 2 adalah = Februari");
+            } else if (getData.value == 3) {
+                alert("Bulan ke 3 adalah = Maret");
+            } else if (getData.value == 4) {
+                alert("Bulan ke 4 adalah = April");
+            } else if (getData.value == 5) {
+                alert("Bulan ke 5 adalah = Mei");
+            } else if (getData.value == 6) {
+                alert("Bulan ke 6 adalah = Juni");
+            } else if (getData.value == 7) {
+                alert("Bulan ke 7 adalah = Juli");
+            } else if (getData.value == 8) {
+                alert("Bulan ke 8 adalah = Agustus");
+            } else if (getData.value == 9) {
+                alert("Bulan ke 9 adalah = September");
+            } else if (getData.value == 10) {
+                alert("Bulan ke 10 adalah = Oktober");
+            } else if (getData.value == 11) {
+                alert("Bulan ke 11 adalah = November");
+            } else if (getData.value == 12) {
+                alert("Bulan ke 12 adalah = Desember");
+            } else if (getData.value > 12) {
+                alert("Bulan Tidak Ditemukan!");
+            } else {
+                alert("Anda Belum Memasukkan Data!");
+            }
+
+            return false;
+        }
+
+    </script>
+</body>
+
+</html>

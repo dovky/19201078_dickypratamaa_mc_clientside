@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title>JS 1 (Latihan)</title>
+    <style>
+        .sec-heading {
+            display: flex;
+            position: relative;
+            border-bottom: 2px solid #C0BFBF;
+            margin-bottom: 22px;
+        }
+
+        .form-group {
+            display: flex;
+        }
+
+    </style>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- 
+        NIM : 19201078 
+        Nama : Dicky Pratama A
+    -->
+    <div class="sec-heading">
+        <h2>Menampilkan Kata - Kata</h2>
+    </div>
+    <form method="post" action="" onsubmit="return prosesForm();">
+        <div class="form-group" style="margin-bottom: 6px;">
+            <label for="">Masukkan Kata - Kata : </label>
+            <input id="kata" type="text" name="kata">
+        </div>
+        <div class="form-group">
+            <button type="submit" style="margin-right: 3px;">Cetak</button>
+        </div>
+    </form>
+
+    <div id="widget"></div>
+
+    <!-- JavaScript -->
+    <script>
+        function prosesForm() {
+            let getData = document.getElementById("kata");
+            let viewData = document.getElementById("widget");
+
+            viewData.innerHTML = "<h1 style='color: blue; font-weight: bold;'>" + getData.value + "</h1>";
+
+            return false;
+        }
+
+    </script>
+</body>
+
+</html>

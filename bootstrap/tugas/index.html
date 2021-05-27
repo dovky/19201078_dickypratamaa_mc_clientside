@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title>Responsive</title>
+    <style>
+        .container {
+            margin: auto;
+            max-width: 960px;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 900px) {
+            .container {
+                max-width: 560px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                max-width: 320px;
+            }
+        }
+
+        .satu {
+            background-color: #FF1A00;
+            float: left;
+            height: 300px;
+            width: 20%;
+        }
+
+        @media screen and (max-width: 480px) {
+            .satu {
+                width: 100%;
+            }
+        }
+
+        .dua {
+            background-color: #008C00;
+            float: left;
+            width: 60%;
+            height: 300px;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 900px) {
+            .dua {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .dua {
+                width: 100%;
+            }
+        }
+
+        .tiga {
+            background-color: #4096EE;
+            float: left;
+            width: 20%;
+            height: 300px;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 900px) {
+            .tiga {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .tiga {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 
+        NIM : 19201078 
+        Nama : Dicky Pratama A
+    -->
+    <div class="container">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+    </div>
+</body>
+
+</html>
